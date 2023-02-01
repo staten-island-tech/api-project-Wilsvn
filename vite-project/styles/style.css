@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400|Playfair+Display:400,700,400italic|Libre+Baskerville:400,700,400italic|Muli:300,400|Open+Sans:400,300,700|Oswald:400,700|Raleway:400,100,300,700|Montserrat:400,700|Merriweather:400,300,300italic,400italic,700|Bree+Serif|Vollkorn:400italic,400,700|Abril+Fatface|Cardo:400,400italic);
+html {
+	font: normal 112.5%/1.65 serif; /* base font size 18px with 1.65 line-height */
+	-moz-font-feature-settings: "liga=1, dlig=1"; /* common and discretionary ligatures */
+	  -ms-font-feature-settings: "liga", "dlig";
+	  -webkit-font-feature-settings: "liga", "dlig";
+	  -o-font-feature-settings: "liga", "dlig";
+	  font-feature-settings: "liga", "dlig";
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+	line-height: 1;
+	margin-top: 0;
+	color: #fff;
+	  display: inline-block;
+	  position: relative;
+  }
+
+body {
+  background-image: url("https://4kwallpapers.com/images/wallpapers/outrun-neon-dark-background-purple-3840x2160-4523.jpg");
+  background-size: 100vw;
+}
+h1{
+  color: white;
+}
+.Header{
+	max-width: 53.33rem;
+	margin: 0 auto;
+	z-index: 10;
+	text-align: center;
+	margin-right: 1100px;
+	width: 40px;
+	height: 40px;
+	box-shadow:
+}
+.Animation {
+	width: 40px;
+    height: 40px;
+	border-radius: 50%;
+	background-color: #fff;
+	margin-left: 800px;
+	margin-top: 30px;
+	box-shadow:
+	  0 0 60px 30px #fff,  /* inner white */
+	  0 0 100px 60px #f0f, /* middle magenta */
+	  0 0 140px 90px #0ff; /* outer cyan */
+  }
+#Display{
+	color: white;
+	display: flex;
+	justify-content: center;
+	flex-flow: row;
+	justify-content: space-around;
+}
+.cool{
+    box-shadow:
+	  0 0 35px 5px #fff,  /* inner white */
+	  0 0 75px 35px #f0f, /* middle magenta */
+	  0 0 115px 65px #0ff;
+}
+.warm{
+	box-shadow:
+	  0 0 35px 5px #fff,  
+	  0 0 75px 35px rgb(255, 0, 72), 
+	  0 0 115px 65px rgb(74, 2, 255);
+}
+.image{
+	height: 30vh;
+}
+.Car
+.ls-medium{letter-spacing: 4px;}
+.ls-xlarge{letter-spacing: 12px;}
+.open-sans{font-family: 'Open Sans';}
+.lato{font-family: 'Lato'}
+.thin{font-weight: 100;}
+.bold{font-weight: 700;}
+.uppercase{text-transform: uppercase;}
+.tera {
+	font-size: 6.5rem; /* 117 / 18 = 6.5 */
+	margin-bottom: 0.25385rem;
+  }
+  .epsilon {
+	font-size: 1.16667rem; /* 21 / 18 = 1.1667 */
+	margin-bottom: 1.41429rem;
+  }
+.gamma {
+	font-size: 2rem; /* 36 / 18 = 2 */
+	margin-bottom: 0.825rem;
+  }
+  .btn {
+	align-items: center;
+	background-image: linear-gradient(144deg,#fff, #f0f 50%,#0ff);
+	border: 0;
+	border-radius: 8px;
+	box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	display: flex;
+	font-family: Phantomsans, sans-serif;
+	font-size: 20px;
+	justify-content: center;
+	line-height: 1em;
+	max-width: 100%;
+	min-width: 140px;
+	padding: 3px;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	white-space: nowrap;
+	cursor: pointer;
+	flex-direction: row;
+  }
+  
+  .btn:active,
+  .btn:hover {
+	outline: 0;
+  }
+  
+  .btn span {
+	background-color: rgb(5, 6, 45);
+	padding: 16px 24px;
+	border-radius: 6px;
+	width: 100%;
+	height: 100%;
+	transition: 300ms;
+  }
+  
+  .btn:hover span {
+	background: none;
+  }
+  
+  @media (min-width: 768px) {
+	.btn {
+	  font-size: 24px;
+	  min-width: 196px;
+	}
+  }
