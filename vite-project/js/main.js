@@ -2,6 +2,19 @@ import "../styles/style.css";
 import { Movies } from "./Movies";
 import { DOM } from "./DOM";
 
+const apiEntry = "https://api.quotable.io/random";
+
+async function fetchData(apiEntry) {
+  try {
+    const response = await fetch(apiEntry);
+    const data = await response.json();
+    console.log(data);
+    return data;
+  } catch (err) {
+    console.error(err);
+  }
+}
+
 DOM.Horror.addEventListener("click", function () {
   DOM.Display.innerHTML = "";
   Movies.filter((Movies) => Movies.genre.includes("horror")).forEach((Movies) =>
@@ -14,6 +27,16 @@ DOM.Horror.addEventListener("click", function () {
       </div>`
     )
   );
+  const putQuoteInHTML = async () => {
+    const quote = await fetchData(apiEntry);
+    DOM.Display.insertAdjacentHTML(
+      "beforeend",
+      `<div class="cool">
+  <p>${quote.content}</p>
+  </div>`
+    );
+  };
+  putQuoteInHTML();
 });
 
 DOM.Comedy.addEventListener("click", function () {
