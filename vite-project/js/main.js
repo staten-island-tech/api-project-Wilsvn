@@ -51,6 +51,16 @@ DOM.Comedy.addEventListener("click", function () {
       </div>`
     )
   );
+  const putQuoteInHTML = async () => {
+    const quote = await fetchData(apiEntry);
+    DOM.Display.insertAdjacentHTML(
+      "beforeend",
+      `<div class="cool">
+  <p>${quote.content}</p>
+  </div>`
+    );
+  };
+  putQuoteInHTML();
 });
 
 DOM.Action.addEventListener("click", function () {
@@ -65,6 +75,16 @@ DOM.Action.addEventListener("click", function () {
       </div>`
     )
   );
+  const putQuoteInHTML = async () => {
+    const quote = await fetchData(apiEntry);
+    DOM.Display.insertAdjacentHTML(
+      "beforeend",
+      `<div class="cool">
+  <p>${quote.content}</p>
+  </div>`
+    );
+  };
+  putQuoteInHTML();
 });
 DOM.Theme.addEventListener("click", function () {
   if (document.DOM.Cool.classList.contains("cool")) {
